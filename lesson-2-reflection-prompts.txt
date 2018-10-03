@@ -15,14 +15,42 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	
+	Using the staging area, you can easily check out the diference between the 
+	most recent commit and the change about to be commited. 
+	This way it can be ensured that the change is nt too large with respect to the 
+	most recent commit.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	
+	when working on projects, it could be necessary to experiment on new features \
+	without actually changing the already working functionality of the project.
+	In this scenarios, branches would be very useful. When using branches the main functionality
+	of the working code is nit tampered with while trying to add new functionalities.
 
 How do the diagrams help you visualize the branch structure?
+	
+	It is a whole lot easier to see the most recent commits and the common commits
+	to two branches using gits --oneline -- graph option. This way youll be able to 
+	understand how two different branches differ. Using the pen - and - paper 
+	mechanism, the branches are easy to visualize and all common commits and the 
+	unreachable commits are also easy to see in the diagrams.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	
+	When we merge two branches we obtain one common branch which previously 
+	points to two parents. This common branch would then have chnages which 
+	are common to both files that is it adds changes that both files would
+	need. The commits in this previous branches are still accesible by the 
+	merged branched. 
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+	Merging manually is by far the most effective way to ensure that the files
+	being merged are exactly what the programmer intends to merge. By doing this
+	the merged commit is always "perfect" when done manually. When the merge is 
+	done automatically it saves time as all the required and expected files are 
+	already there since there would be no conflict
